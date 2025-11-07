@@ -45,7 +45,7 @@ describe('Usuarios', () => {
         expect(response.statusCode).toBe(200);
     });
 
-    IT('Obter o usuario 1 pelo id', async () => {
+    it('Obter o usuario 1 pelo id', async () => {  // Fixed IT to it
         const response = await request(app).get('/api/users/1');
         expect(response.statusCode).toBe(200);
     });
